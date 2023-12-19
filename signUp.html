@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+        }
+
+        .gradient-background {
+            background: linear-gradient(300deg, #61B7ED, #61EDD4, #61ACED,#618BED,#5B7CF0);
+            background-size: 180% 180%;
+            animation: gradient-animation 18s ease infinite;
+        }
+        .gradient-box {
+            background: linear-gradient(300deg, #6193ED, #8A61ED, #6166ED,#71C9F5,#B75BEF);
+            background-size: 180% 180%;
+            animation: gradient-animation 18s ease infinite;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #61DFED;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 30%;
+            height: 90vh;
+            background-color: #61B3ED;
+            border: 10px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .box {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            text-align: center;
+            gap: 8px;
+            border-radius: 10px;
+        }
+        .heading{
+            margin-top:-14px;
+            margin-bottom: 15px;
+        }
+        input {
+            width: 100%;
+            height: 33px;
+            border-radius: 10px;
+            border: #61B3ED;
+            padding: 12px;
+            color: #aaa;
+        }
+        button{
+            margin-top: 25px;
+            color: black;
+            font-weight: 900;
+            width: 100%;
+            border-radius: 10px;
+            height: 32px;
+        }
+        .btn :hover{
+            background-color: #5B7CF0;
+        }
+        .privacy a{
+            font-size: 0.5rem;
+            font-weight: 200;
+            text-decoration: none;
+        }
+        .line{
+            display: flex;
+            justify-content: center;
+            height: 0px;
+            padding: 0;
+        }
+        hr{
+            margin-top: -5px;
+            width: 80%; 
+            height: inherit;
+        }
+        img{
+            mix-blend-mode: multiply;
+        }
+    </style>
+</head>
+
+<body class="gradient-background">
+    <div class="container gradient-box">
+        <div class="box ">
+            <div class="logo">
+                <img src="/wd/image/signUpLogo.jpg" width="180" alt="">
+            </div>
+            <div class="heading">
+                <h1>SIGN UP TODAY</h1>
+            </div>
+            <div class="username">
+                <input type="text" placeholder="username" name="uname" required>
+            </div>
+            <div class="email">
+                <input type="email" placeholder="email" required>
+            </div>
+            <div class="password">
+                <input type="text" placeholder="password">
+            </div>
+            <div class="btn">
+                <button class="btn">Submit</button>
+            </div>
+            <div class="privacy">
+                <a href="">PRIVACY POLICY  | TERMS AND CONDITION</a>
+            </div>
+            <div class="line">
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
